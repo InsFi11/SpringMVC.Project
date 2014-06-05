@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>YourLIB</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" style="">
+    <link rel="stylesheet" type="text/css" href="css/reg.css" style="">
+
+    <!-- include the core styles of Alertify-->
+    <link rel="stylesheet" href="js/jquery_plugins/alertify/themes/alertify.core.css"/>
+    <!-- Alertify. Include a theme, can be included into the core instead of 2 separate files -->
+    <link rel="stylesheet" href="js/jquery_plugins/alertify/themes/alertify.default.css"/>
+
+    <!-- bxSlider CSS file -->
+    <link href="js/jquery_plugins/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+
+    <!-- Alertify js-->
+    <script src="js/jquery_plugins/alertify/lib/alertify.min.js"></script>
+
+
+    <!-- bxSlider Javascript file -->
+    <script src="js/jquery_plugins/bxslider/jquery.bxslider.min.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/reg.js"></script>
+
+</head>
+<body>
+
+<div id="content">
+    <div class="wrap">
+        <header>
+            <div>
+                <a class="logo_img" href="index.html">
+                    <img src="img/logo.png" alt="Main">
+                </a>
+                <a class="logo_title" href="index.html">
+                    YourLIB
+                </a>
+            </div>
+
+            <div class="user_actions">
+                <a href="reg.html">
+                    Registration
+                </a>
+                <a href="login.html">
+                    Log In
+                </a>
+            </div>
+            <div class="clear"></div>
+        </header>
+
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php?controller=about">About</a></li>
+                <li class="search">
+                    <form action="search.html" method="post">
+                        <input type="text" id="search_input" class="input_text" value=""/>
+                        <input class="submit_button" id="search_submit" type="submit" value="Search">
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="spacer"></div>
+        <div class="main_content">
+            <h2>Registration</h2>
+            <form action="" method="post" id="registration">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="first_name">
+                                <span>First name</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input id="first_name" type="text" name="first_name" value=""/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="last_name">
+                                <span>Last name</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input id="last_name" type="text" name="last_name" value=""/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sex_m">
+                                <span>Sex</span>
+                            </label>
+                        </td>
+                        <td>
+                            <table class="sex">
+                                <tr>
+                                    <td>
+                                        <input id="sex_m" type="radio" name="sex" value="male" />
+                                    </td>
+                                    <td>
+                                        <input id="sex_f" type="radio" name="sex" value="female"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="sex">
+                                            <label for="sex_m">male</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="sex">
+                                            <label for="sex_f">female</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">
+                                <span>Email</span><sup>*</sup>
+                            </label>
+                        </td>
+                        <td>
+                            <input id="email" type="email" name="email" value="" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="login">
+                                <span>Login</span><sup>*</sup>
+                            </label>
+                        </td>
+                        <td>
+                            <input id="login" type="text" name="login" value="" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">
+                                <span>Password</span><sup>*</sup>
+                            </label>
+                        </td>
+                        <td>
+                            <input id="password" type="password" name="password" value="" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="repassword">
+                                <span>Repeat password</span><sup>*</sup>
+                            </label>
+                        </td>
+                        <td>
+                            <input id="repassword" type="password" name="repassword" value="" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="birthday">
+                                <span>Birthday</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input id="birthday" type="date" name="birthday" value=""/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="about_me">
+                                <span>About me</span>
+                            </label>
+                        </td>
+                        <td>
+                            <textarea id="about_me" name="about_me"></textarea>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="spacer"></div>
+
+                <input class="submit_button" id="submit_reg" type="submit" value="Registrate" onclick="validateRegForm(this);return false;"/>
+                <div class="clear"></div>
+
+                <div class="spacer"></div>
+
+            </form>
+        </div>
+    </div>
+    <div id="footer_spacer"></div>
+</div>
+<footer>
+    <div class="wrap">
+        <a class="big_logo" href="index.php">
+        </a>
+
+        <div class="footer_navigation">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="index.php?controller=about">
+                        About
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="links">
+
+        </div>
+        <div class="clear"></div>
+    </div>
+</footer>
+</body>
+</html>
+</html>

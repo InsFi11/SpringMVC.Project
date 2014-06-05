@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>YourLIB</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" style="">
+
+    <!-- include the core styles of Alertify-->
+    <link rel="stylesheet" href="js/jquery_plugins/alertify/themes/alertify.core.css"/>
+    <!-- Alertify. Include a theme, can be included into the core instead of 2 separate files -->
+    <link rel="stylesheet" href="js/jquery_plugins/alertify/themes/alertify.default.css"/>
+
+    <!-- bxSlider CSS file -->
+    <link href="js/jquery_plugins/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+
+    <?php echo $cssList; ?>
+
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+
+    <!-- Alertify js-->
+    <script src="js/jquery_plugins/alertify/lib/alertify.min.js"></script>
+
+
+    <!-- bxSlider Javascript file -->
+    <script src="js/jquery_plugins/bxslider/jquery.bxslider.min.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <?php echo $jsList; ?>
+
+</head>
+<body>
+
+<div id="content">
+    <div class="wrap">
+        <header>
+            <div>
+                <a class="logo_img" href="index.html">
+                    <img src="img/logo.png" alt="Main">
+                </a>
+                <a class="logo_title" href="index.html">
+                    YourLIB
+                </a>
+            </div>
+
+            <div class="user_actions">
+                <a href="reg.html">
+                    Registration
+                </a>
+                <a href="login.html">
+                    Log In
+                </a>
+            </div>
+            <div class="clear"></div>
+        </header>
+
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php?controller=about">About</a></li>
+                <li class="search">
+                    <form action="search.html" method="post">
+                        <input type="text" id="search_input" class="input_text" value=""/>
+                        <input class="submit_button" id="search_submit" type="submit" value="Search">
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="spacer"></div>
+        <div class="main_content">
+            <h2>Find book!</h2>
+            <form class="search_book" action="search.html" method="post">
+                <input type="text" class="input_text" value=""/>
+                <input id="submitFindButton" type="submit" value="Find!" />
+            </form>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        </div>
+    </div>
+    <div id="footer_spacer"></div>
+</div>
+<footer>
+    <div class="wrap">
+        <a class="big_logo" href="index.php">
+        </a>
+
+        <div class="footer_navigation">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="index.php?controller=about">
+                        About
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="links">
+
+        </div>
+        <div class="clear"></div>
+    </div>
+</footer>
+</body>
+</html>
+</html>

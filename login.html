@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>YourLIB</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" style="">
+    <link rel="stylesheet" type="text/css" href="css/login.css" style="">
+
+    <!-- include the core styles of Alertify-->
+    <link rel="stylesheet" href="js/jquery_plugins/alertify/themes/alertify.core.css"/>
+    <!-- Alertify. Include a theme, can be included into the core instead of 2 separate files -->
+    <link rel="stylesheet" href="js/jquery_plugins/alertify/themes/alertify.default.css"/>
+
+    <!-- bxSlider CSS file -->
+    <link href="js/jquery_plugins/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+
+    <?php echo $cssList; ?>
+
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+
+    <!-- Alertify js-->
+    <script src="js/jquery_plugins/alertify/lib/alertify.min.js"></script>
+
+
+    <!-- bxSlider Javascript file -->
+    <script src="js/jquery_plugins/bxslider/jquery.bxslider.min.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <?php echo $jsList; ?>
+
+</head>
+<body>
+
+<div id="content">
+    <div class="wrap">
+        <header>
+            <div>
+                <a class="logo_img" href="index.html">
+                    <img src="img/logo.png" alt="Main">
+                </a>
+                <a class="logo_title" href="index.html">
+                    YourLIB
+                </a>
+            </div>
+
+            <div class="user_actions">
+                <a href="reg.html">
+                    Registration
+                </a>
+                <a href="login.html">
+                    Log In
+                </a>
+            </div>
+            <div class="clear"></div>
+        </header>
+
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php?controller=about">About</a></li>
+                <li class="search">
+                    <form action="search.html" method="post">
+                        <input type="text" id="search_input" class="input_text" value=""/>
+                        <input class="submit_button" id="search_submit" type="submit" value="Search">
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="spacer"></div>
+        <div class="main_content">
+            <form action="" method="post">
+                <table class="login">
+                    <tr>
+                        <td>
+                            <label for="login">
+                                <span>Login</span><sup>*</sup>
+                            </label>
+                        </td>
+                        <td>
+                            <input id="login" type="text" name="login" value="" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">
+                                <span>Password</span><sup>*</sup>
+                            </label>
+                        </td>
+                        <td>
+                            <input id="password" type="password" name="password" value="" required/>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="spacer"></div>
+
+                <input class="submit_button" id="submit_login" type="submit" value="Log In"/>
+                <div class="clear"></div>
+
+                <div class="spacer"></div>
+            </form>
+        </div>
+    </div>
+    <div id="footer_spacer"></div>
+</div>
+<footer>
+    <div class="wrap">
+        <a class="big_logo" href="index.php">
+        </a>
+
+        <div class="footer_navigation">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="index.php?controller=about">
+                        About
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="links">
+
+        </div>
+        <div class="clear"></div>
+    </div>
+</footer>
+</body>
+</html>
+</html>
